@@ -1,0 +1,34 @@
+# To publish a new release, press 'Create new release' and fill in the form.
+# Use an appropriate tag name starting with 'v'.
+# For example, 'v2.1'.
+
+---
+name: "tagged-release"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  tagged-release:
+    name: "Tagged Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Check out this cool repo!"
+        uses: actions/checkout@v4
+      
+      - name: "Build zip"
+        run: zip -r pack.zip pack/*
+
+      - name: "Generate sha1 hash"
+        run: sha1sum pack.zip | cut -d " " -f 1 > hash.sha1
+          
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            pack.zip
+            hash.sha1
