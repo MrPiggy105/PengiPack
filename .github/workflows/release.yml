@@ -1,6 +1,6 @@
 # To publish a new release, press 'Create new release' and fill in the form.
 # Use an appropriate tag name starting with 'v'.
-# For example, 'v2.1'.
+# For example, 'v2.5.0'. It must use semantic versioning (which is "vX.Y.Z").
 
 ---
 name: "tagged-release"
@@ -28,6 +28,7 @@ jobs:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
           prerelease: false
           files: |
             pack.zip
