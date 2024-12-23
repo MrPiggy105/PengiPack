@@ -1,8 +1,130 @@
 {
     "providers": [
         {
-            "type": "reference",
-            "id": "custom_escape:custom_font"
+            "file": "custom_escape:internal/square.png",
+            "chars": [
+                "\uEFFF"
+            ],
+            "height": -209,
+            "ascent": -10000,
+            "type": "bitmap"
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/logo.png",
+            "height": 120,
+            "ascent": 113,
+            "chars": [
+                "\uEF00"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/back_to_game.png",
+            "height": 120,
+            "ascent": 113,
+            "chars": [
+                "\uEF01"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/quit.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF02"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/bottom_card.png",
+            "height": 121,
+            "ascent": -5,
+            "chars": [
+                "\uEF03"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/send_feedback.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF04"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/report_bugs.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF05"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/options.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF06"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/open_to_lan.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF07"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/feedback.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF08"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/server_links.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF09"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/player_reporting.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF0A"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/advancements.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF0B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "file": "custom_escape:escape_menu/statistics.png",
+            "height": 120,
+            "ascent": 112,
+            "chars": [
+                "\uEF0C"
+            ]
         },
         {
             "type": "bitmap",
