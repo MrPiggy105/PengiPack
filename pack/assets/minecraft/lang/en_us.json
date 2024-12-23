@@ -1,12 +1,15 @@
 {
-    "menu.game": "",
-    "menu.returnToGame": "\uEFFF\uEF01\uEFFF\uEF00\uEFFF",
-    "menu.returnToMenu": "\uEFFF\uEF02\uEFFF\uEF03\uEFFF",
-    "menu.disconnect": "\uEFFF\uEF02\uEFFF\uEF03\uEFFF\uEF0A\uEFFF",
-    "menu.sendFeedback": "\uEFFF\uEF04\uEFFF\uEF0B\uEFFF",
-    "menu.reportBugs": "\uEFFF\uEF05\uEFFF\uEF0C\uEFFF",
-    "menu.options": " \uEFFF\uEF06\uEFFF",
-    "menu.shareToLan": "\uEFFF\uEF07\uEFFF",
-    "menu.feedback": "\uEFFF\uEF08\uEFFF\uEF0B\uEFFF",
-    "menu.server_links": "\uEFFF\uEF09\uEFFF\uEF0C\uEFFF"
+    "menu.game": "\uEF00",
+    "menu.returnToGame": "Return To Minigames",
+    "menu.returnToMenu": "Return To Menu",
+    "menu.disconnect": "Leave Antarctic Minigames",
+    "menu.sendFeedback": "Pls rate 5 penguins",
+    "menu.reportBugs": "Report Unknown Species",
+    "menu.options": "Settings",
+    "menu.shareToLan": "pengicorner.xyz",
+    "menu.feedback": "Get Help",
+    "menu.server_links": "Links",
+    "menu.advancements": "Commands",
+    "menu.playerReporting": "Report Penguin",
+    "gui.stats": "View Minigame Stats"
 }   
