@@ -1,19 +1,19 @@
 {
-    "pack": {
-        "description": [
-            {
-                "text": "Made",
-                "color": "#84ed37"
-            },
-			{
-                "text": " By ",
-                "color": "#84ed37"
-            },
-            {
-                "text": "Nautical Services",
-                "color": "yellow"
-            }
-        ],
-        "pack_format": 45
-    }
+  "pack": {
+    "description": [
+      {
+        "text": "Official pack",
+        "color": "#84ed37"
+      },
+      {
+        "text": " for ",
+        "color": "#84ed37"
+      },
+      {
+        "text": "Pengi's Corner",
+        "color": "yellow"
+      }
+    ],
+    "pack_format": 46
+  }
 }

@@ -1,12 +1,16 @@
 {
     "providers": [
         {
+            "type": "reference",
+            "id": "custom_escape:custom_font"
+        },
+        {
             "type": "bitmap",
             "file": "minecraft:ranks/adminbyrg.png",
             "ascent": 8,
             "height": 8,
             "chars": [""]
-	},
+	    },
         {
             "type": "bitmap",
             "file": "minecraft:ranks/bluebyrg.png",
