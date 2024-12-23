@@ -20,15 +20,15 @@ jobs:
         uses: actions/checkout@v4
       
       - name: "Build zip"
-        run: cd pack && zip -r ../pack.zip . && cd ..
+        run: cd pack && zip -r ../PengiPack.zip . && cd ..
 
       - name: "Generate sha1 hash"
-        run: sha1sum pack.zip | cut -d " " -f 1 > hash.sha1
+        run: sha1sum PengiPack.zip | cut -d " " -f 1 > hash.sha1
           
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           files: |
-            pack.zip
+            PengiPack.zip
             hash.sha1
