@@ -5,7 +5,7 @@ The resource pack for the Pengi's Corner Minecraft server.
 Features include:
 
 - Custom ranks
-- Custom pause menu (incomplete)
+- Custom pause menu
 - ...and some little easter eggs :)))
 
 ```
