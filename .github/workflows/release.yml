@@ -18,16 +18,32 @@ jobs:
     steps:
       - name: "Check out this cool repo!"
         uses: actions/checkout@v4
-      
+
       - name: "Build zip"
         run: cd pack && zip -r ../PengiPack.zip . && cd ..
 
       - name: "Generate sha1 hash"
-        run: sha1sum PengiPack.zip | cut -d " " -f 1 > hash.sha1
-          
-      - uses: "marvinpinto/action-automatic-releases@latest"
+        run:
+          sha1sum PengiPack.zip | cut -d " " -f 1 > hash.sha1
+
+          # Extract the tag description for release notes
+      - name: Get Tag Description
+        id: tag_description
+        run: |
+          tag_name=${GITHUB_REF##*/}
+          description=$(git for-each-ref refs/tags/$tag_name --format='%(subject)%0A%0A%(body)')
+          echo "::set-output name=description::$description"
+        env:
+          GITHUB_REF: ${{ github.ref }}
+
+      # Create the release and upload assets
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          generate_release_notes: true
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }} # Use the tag name as the release name
+          body: ${{ steps.tag_description.outputs.description }} # Use the tag description for release notes
           prerelease: false
           files: |
             PengiPack.zip
