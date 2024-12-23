@@ -31,7 +31,7 @@ jobs:
         id: tag_description
         run: |
           tag_name=${GITHUB_REF##*/}
-          description=$(git for-each-ref refs/tags/$tag_name --format='%(subject)%0A%0A%(body)')
+          description=$(git tag --sort=-creatordate | head -n 1 | xargs -I {} git for-each-ref refs/tags/{} --format="%(contents)")
           echo "::set-output name=description::$description"
         env:
           GITHUB_REF: ${{ github.ref }}
@@ -48,3 +48,4 @@ jobs:
           files: |
             PengiPack.zip
             hash.sha1
+
