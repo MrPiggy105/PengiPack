@@ -29,12 +29,7 @@ jobs:
           # Extract the tag description for release notes
       - name: Get Tag Description
         id: tag_description
-        run: |
-          tag_name=${GITHUB_REF##*/}
-          description=$(git tag --sort=-creatordate | head -n 1 | xargs -I {} git for-each-ref refs/tags/{} --format="%(contents)")
-          echo "::set-output name=description::$description"
-        env:
-          GITHUB_REF: ${{ github.ref }}
+        run: echo 'description=$(git tag --sort=-creatordate | head -n 1 | xargs -I {} git for-each-ref refs/tags/{} --format="%(contents)")' >> $GITHUB_OUTPUT
 
       # Create the release and upload assets
       - name: Create GitHub Release
@@ -42,8 +37,8 @@ jobs:
         with:
           generate_release_notes: true
           tag_name: ${{ github.ref_name }}
-          name: ${{ github.ref_name }} # Use the tag name as the release name
-          body: ${{ steps.tag_description.outputs.description }} # Use the tag description for release notes
+          name: ${{ github.ref_name }}
+          body: ${{ steps.version.outputs.description }}
           prerelease: false
           files: |
             PengiPack.zip
