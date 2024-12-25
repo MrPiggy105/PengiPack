@@ -1,8 +1,8 @@
 {
-    "menu.game": "\uEF00",
+    "menu.game": "",
     "menu.returnToGame": "Return To Minigames",
-    "menu.returnToMenu": "Return To Menu",
-    "menu.disconnect": "Leave Antarctic Minigames",
+    "menu.returnToMenu": "",
+    "menu.disconnect": "",
     "menu.sendFeedback": "Pls rate 5 penguins",
     "menu.reportBugs": "Report Unknown Species",
     "menu.options": "Settings",

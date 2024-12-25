@@ -12,11 +12,20 @@
         {
             "type": "bitmap",
             "file": "pengipack:escape_menu/bottom_card.png",
-            "height": 121,
-            "ascent": -5,
+            "height": 108,
+            "ascent": 7,
             "chars": [
-                ""
+                ""
             ]
+        },
+        {
+            "type": "bitmap",
+            "file": "pengipack:escape_menu/commands.png",
+            "chars": [
+                ""
+            ],
+            "height": 320,
+            "ascent": 71
         },
         {
             "type": "bitmap",
