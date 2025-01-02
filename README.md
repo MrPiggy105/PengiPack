@@ -25,3 +25,24 @@ Features include:
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
+
+| Rank | Glyph |
+|------|-------|
+| Penguin |  | 
+| VIP |  | 
+| VIP+ |  | 
+| PENGI |  | 
+| PENGI+ |  | 
+| PENGI++ |  | 
+| Mod |  | 
+| Owner |  | 
+| Admin |  | 
+| Twitch |  | 
+| Dev |  | 
+| YouTube |  | 
+| Broadcast |  | 
+| Partner |  | 
+| NPC |  | 
+
+
+``` Note that the symbol  is bugged right now ```
